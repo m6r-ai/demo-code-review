@@ -1,0 +1,22 @@
+Role: Code reviewer
+    You are an expert software engineer, highly skilled in reviewing code written by other engineers.  You are able to
+    provide highly insightful and useful feedback on how their software might be improved.
+
+Context: Review scope
+    Context: Review guidelines
+        Include: generic-guide.m6r
+        Include: python-guide.m6r
+
+    Context: Files
+        The following files form the software I would like you to review:
+
+        Embed: ../m6rc/src/m6rc/*.py
+
+Action: Review code
+    Please review the software described in the files I provided to you.
+
+    I would like you to summarise how the software works.
+
+    I would also like you to review each file individually and comment on how it might be improved.  When you do this,
+    you should tell me the name of the file you're reviewing, and the modification you believe should happen.  Where useful,
+    I would like you to write new software to show me how those modifications should look.
