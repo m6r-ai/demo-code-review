@@ -4,12 +4,14 @@ Role: Code reviewer
 
 Context: Review scope
     Context: Review guidelines
+        # Replace this with the M6R formatted guidelines.
         Include: generic-guide.m6r
         Include: python-guide.m6r
 
     Context: Files
         The following files form the software I would like you to review:
 
+        # Replace this next line with the files you would like to review.
         Embed: ../m6rc/src/m6rc/*.py
 
 Action: Review code
@@ -17,6 +19,10 @@ Action: Review code
 
     I would like you to summarise how the software works.
 
-    I would also like you to review each file individually and comment on how it might be improved.  When you do this,
-    you should tell me the name of the file you're reviewing, and the modification you believe should happen.  Where useful,
-    I would like you to write new software to show me how those modifications should look.
+    I would also like you to review each file individually and comment on how it might be improved, based on the
+    guidelines I have provided.  When you do this, you should tell me the name of the file you believe may want to
+    be modified, the modification you believe should happen, and which of the guidelines the change would align with.
+    If any change you envisage might conflict with a guideline then please highlight this and the guideline that might
+    be impacted.
+
+    Where useful, I would like you to write new software to show me how any modifications should look.
